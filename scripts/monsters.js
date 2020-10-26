@@ -246,7 +246,7 @@ const monsterManual = {
         hitPoints: 179,
         hitDie: "(17d12+68)",
         speed: "60 ft.",
-                //     str: num,
+        str: num,
                 //     dex: num,
                 //     con: num,
                 //     int: num,
@@ -267,7 +267,7 @@ const monsterManual = {
                 //     legendaryActions: "",
                 //     behaviour: "",
                 //     lair: "",
-                    imageUrl: "assets/auspiciousStarrix.jpg",
+        imageUrl: "assets/auspiciousStarrix.jpg",
                 //     imageDiscription: ,
 },
 
@@ -2783,7 +2783,7 @@ app.monsterDisplayAll = () => {
         
 
         const html2 = `<div class="monsterContainer">
-        <img src='../${monsterManual[item].imageUrl}' alt= "${monsterManual[item].imageDiscription}">
+        <img src='../assets/${monsterManual[item].imageUrl}' alt= "${monsterManual[item].imageDiscription}">
         
         <h2>${monsterManual[item].name}</h2>
         <p>${monsterManual[item].size} ${monsterManual[item].type}` 
