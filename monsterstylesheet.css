@@ -1,0 +1,11 @@
+.monsterContainer{
+    border: 5px solid black;
+    margin: 25 px;
+    padding 25 px;
+}
+
+.monsterContainer img{
+    float: right;
+    height: 400px;
+    width: 600px;
+}
