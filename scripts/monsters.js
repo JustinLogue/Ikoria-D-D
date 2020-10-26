@@ -246,9 +246,9 @@ const monsterManual = {
         hitPoints: 179,
         hitDie: "(17d12+68)",
         speed: "60 ft.",
-        str: num,
-                //     dex: num,
-                //     con: num,
+        str: 19,
+        dex: 16,
+        con: 20,
                 //     int: num,
                 //     wis: num,
                 //     cha: num,
@@ -2783,7 +2783,7 @@ app.monsterDisplayAll = () => {
         
 
         const html2 = `<div class="monsterContainer">
-        <img src='../assets/${monsterManual[item].imageUrl}' alt= "${monsterManual[item].imageDiscription}">
+        <img src='../${monsterManual[item].imageUrl}' alt= "${monsterManual[item].imageDiscription}">
         
         <h2>${monsterManual[item].name}</h2>
         <p>${monsterManual[item].size} ${monsterManual[item].type}` 
