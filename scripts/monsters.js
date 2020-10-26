@@ -2783,7 +2783,7 @@ app.monsterDisplayAll = () => {
         
 
         const html2 = `<div class="monsterContainer">
-        <img src='${monsterManual[item].imageUrl}' alt= "${monsterManual[item].imageDiscription}">
+        <img src='../${monsterManual[item].imageUrl}' alt= "${monsterManual[item].imageDiscription}">
         
         <h2>${monsterManual[item].name}</h2>
         <p>${monsterManual[item].size} ${monsterManual[item].type}` 
