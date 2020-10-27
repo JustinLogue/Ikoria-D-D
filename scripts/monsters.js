@@ -88,7 +88,7 @@ const monsterManual = {
             3: "Zagoth"
         },
         cr: 2,
-        xp: "(450)",
+        xp: "(450 xp)",
         traits: "Shimmer. Any area within 60 feet of Adaptive Shimmerer counts as bright light. All creatures within 30 feet of Adaptive Shimmer (including itself) gain disadvantage on sleath checks. ",
         mutate: "Whenever this creature mutates, it gains +2 str and +2 con.",
         actions:"Bite. +5 to hit, reach 5ft, one traget. Hit: 16 (3d8 + 4 piercing damage).",
@@ -136,7 +136,7 @@ const monsterManual = {
             3: "Savai"
         },
         cr: 1,
-        xp: "(200)",
+        xp: "(200 xp)",
         traits: "Aggressive. As a bonus action, this creature can move up to its speed toward a hostile creature it can see.",
         mutate: "-",
         actions:"Bite. +3 to hit, reach 5ft, one traget. Hit: 9(2d8 + 1)  piercing damage. On hit target must make a DC 13 Cha saving throw. On failure, target must make a melee attack action on the their next turn, must use it before their movement if a target is in range and must attack a target other that this creature if at least two targets are avalible.",
@@ -225,7 +225,7 @@ const monsterManual = {
             1: "Raugrin",
         },
         cr: 17,
-        xp: "(18,000)",
+        xp: "(18,000 xp)",
         traits: "Ampibious. This creature can breathe air and water. <br> Ambush Predator. If not in combat this creature is always treated as having just made a sleath roll. <br> Siege Monster. This creature deals double damage to objects and structures.",
         mutate: "When this creature mutates, if it is in water, it summons a tidal wave for each time it has mutated this combat. Each wave is a 60 ft long and 20 ft wide and tall. All creatures in the afected area must make a DC 18 Dex saving throw, taking 4d12 damage and being knocked prone on a failure, half damage onn a save.",
         actions:"Multiattack: This creature makes three attacks, one bite attack and two claw attacks. <br> Bite: Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 21 (3d8 + 8) piercing damage. If the target is a Large or smaller creature, it must succeed on a DC 18 Dexterity saving throw or be swallowed by this creature. A swallowed creature is Blinded and Restrained, it has total cover against attacks and other Effects outside the worm, and it takes 21 (6d6) acid damage at the start of each of the worm's turns. If this creature takes 30 damage or more on a single turn from a creature inside it, this creature must succeed on a DC 21 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of this creature. If this creature dies, a swallowed creature is no longer Restrained by it and can escape from the corpse by using 20 feet of Movement, exiting prone. <br> Claw: +14 to hit, reach 15 ft., one target. Hit: 32 (3d12 + 8) slashing damage. If the target is large or smaller it must make a DC 19 Str saving throw, on a failure they are grappled.",
@@ -238,71 +238,100 @@ const monsterManual = {
     
     AuspiciousStarrix  : {
         name: "Auspicious Starrix",
-        size: "",
+        size: "Huge",
         type:"Fey",
-        subtype: "Huge",
+        subtype: "",
         alignment: "Chaotic Neutral",
         armorClass: "19 (Nautral Armour)",
         hitPoints: 179,
         hitDie: "(17d12+68)",
         speed: "60 ft.",
+        proficiency: 3,
         str: 19,
         dex: 16,
         con: 20,
-                //     int: num,
-                //     wis: num,
-                //     cha: num,
-                //     savingThrows "",
-                //     skills: "",
-                //     damageVulerabilites: "",
-                //     damageResistance
-                //     damageImmunities: "",
-                //     senses: "",
-                //     languges: "",
+        int: 10,
+        wis: 14,
+        cha: 18,
+        savingThrows: "CHA: +7",
+        skills: "Intimidation: +7, Perception: +5, Insight: +5",
+        damageVulerabilites: "",
+        damageResistance: "",
+        damageImmunities: "",
+        conditionImmunities: "Charmed",
+        senses: "Passive Perception",
+        languges: "Common, Sylvan",
+        location: "Forest, Jungle",
+        locationTags: {
+            1: "Forest",
+            2: "Jungle",
+        },
+        triome: "Indartha, Ketria, Zagoth",
+        triomeTages : {
+            1: "Indartha",
+            2: "Ketria",
+            3: "Zagoth"
+        },
         cr: 7,
         xp: "(2,900)",
-                //     traits: "",
-                //     mutate: "",
-                //     actions:"",
-                //     legendaryActions: "",
-                //     behaviour: "",
-                //     lair: "",
+        traits: "Charge. If this creature moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 13 (4d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone. <br> Auspicious Fortune (3/day). This creature can choose to replace the result of any d20 roll with a 15.",
+        mutate: "When this creature mutates it casts Conjure Woodland Beings (at 4th level) for each time it has mutates this combat.",
+        actions:"Multiattack. This creature makes 3 attacks: one with its ram and two with its hooves. Ram. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11(2d6 + 4) bludgeoning damage. <br> Hooves. Melee Weapon Attack: +7 to hit, reach 5 ft., one prone creature. Hit: 20(4d8 + 4) bludgeoning damage",
+        legendaryActions: "",
+        behaviour: "A proud creature which waltzs around the forests of Ikoria. It moves with the confidence of a creature whos sucess is asured and is dotted on my a court, because it somewhat does. It has some minior conjuration and divination powers, allow it to summon allies and see beneficial futures.",
+        lair: "",
         imageUrl: "assets/auspiciousStarrix.jpg",
-                //     imageDiscription: ,
+        imageDiscription: "A green, fey, elk-like creature.",
 },
 
     AvianOddity  : {
-        //     name: "",
-        //     Pname: "",
-        //     size: "",
-        //     alignment: "",
-        //     armorClass: "",
-        //     hitPoints: num,
-        //     hitDie: "",
-        //     speed: "",
-        //     str: num,
-        //     dex: num,
-        //     con: num,
-        //     int: num,
-        //     wis: num,
-        //     cha: num,
-        //     savingThrows "",
-        //     skills: "",
-        //     damageVulerabilites: "",
-        //     damageResistance
-        //     damageImmunities: "",
-        //     senses: "",
-        //     languges: "",
-        //     cr: num,
-        //     traits: "",
-        //     mutate: "",
-        //     actions:"",
-        //     legendaryActions: "",
-        //     behaviour: "",
-        //     lair: "",
-        //     imageUrl: "assets/.png",
-        //     imageDiscription: ,
-},
+        name: "Avian Oddity",
+        size: "Large",
+        type:"Beast",
+        subtype: "",
+        alignment: "Neutral",
+        armorClass: "14",
+        hitPoints: 44,
+        hitDie: "(6d10+12)",
+        speed: "10 ft., Flight 60 ft.",
+        str: 16,
+        dex: 18,
+        con: 14,
+        int: 8,
+        wis: 14,
+        cha: 6,
+        savingThrows: "",
+        skills: "Perception +4, Intimidation: +4",
+        damageVulerabilites: "",
+        damageResistance: "",
+        damageImmunities: "",
+        senses: "passive Precption 14",
+        languges: "Understands Common And Auran But Can't Speak",
+        location: "Coastal, Grassland, Hill, Forest, Mountain",
+        locationTags: {
+            1: "Coastal",
+            2: "Grassland",
+            3: "Hill",
+            4: "Forest",
+            5: "Mountain"
+        },
+        triome: "Ketria, Raugrin, Zagoth",
+        triomeTages : {
+            1: "Raugrin",
+            2: "Ketria",
+            3: "Zagoth"
+        },
+        cr: 1,
+        xp: "(200 xp)",
+        traits: "Keen Sight. This creature has advantage on Wisdom (Perception) checks that rely on sight. <br> Gift of Feathers (1/day). Once per day this Creature can give one willing creature within 30 feet of it a flying speed of 60 feet. This effect last untill that creature's next long rest",
+        mutate: "",
+        actions:"Multiattack. This creature makes two attacks: one with its beak and one with its talons. <br>Beak. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage. <br>Talons. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
+        legendaryActions: "",
+        behaviour: "A odd creature to say the least. Lower on the food than most of Ikoria's monsters it eats bugs, fruit and tiny vermin. It avoids larger predators with flight or puffing itself up and strenching out it's many, mnay wings. It sometimes gains allies by gift flight onto tougher creatures in exchange for protection.",
+        lair: "",
+        imageUrl: "assets/AvianOddity.jpg",
+        imageDiscription: "A bizzare bird-like crature with dozens of wings.",
+    },
 
 BlisterspitGremlin  : {
     //     name: "",
@@ -2752,8 +2781,24 @@ ZagothMamba  : {
 app.innit = () => {
     
     app.monsterCount();
-    app.monsterDisplayAll();
+    app.populate();
+    app.depopulate();
+    // app.monsterDisplayAll();
 };
+
+app.populate = () => {
+    $("#populateButton").on('click', function(){
+        console.log("Click!")
+        app.monsterDisplayAll();
+    })
+}
+
+app.depopulate = () => {
+    $("#depopulateButton").on('click', function(){
+        console.log("Declick!")
+        $(".monsters").empty();
+    })
+}
 
 app.monsterCount = () => {
     var count = 0;
