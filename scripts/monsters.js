@@ -280,7 +280,7 @@ const monsterManual = {
         legendaryActions: "",
         behaviour: "A proud creature which waltzs around the forests of Ikoria. It moves with the confidence of a creature whos sucess is asured and is dotted on my a court, because it somewhat does. It has some minior conjuration and divination powers, allow it to summon allies and see beneficial futures.",
         lair: "",
-        imageUrl: "assets/auspiciousStarrix.jpg",
+        imageUrl: "assets/AuspiciousStarrix.jpg",
         imageDiscription: "A green, fey, elk-like creature.",
 },
 
