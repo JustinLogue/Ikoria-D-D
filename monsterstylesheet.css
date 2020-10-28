@@ -20,3 +20,16 @@
     width: 150px;
     background-color: red;
 }
+
+.selector{
+    display:flex;
+    flex-direction: row;
+    padding: 25px;
+    margin : 25px;
+}
+
+#selectCR{
+    height: 100px;
+    width: 150px;
+    background-color: cyan;
+}

@@ -274,7 +274,7 @@ const monsterManual = {
         },
         cr: 7,
         xp: "(2,900)",
-        traits: "Charge. If this creature moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 13 (4d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone. <br> Auspicious Fortune (3/day). This creature can choose to replace the result of any d20 roll with a 15.",
+        traits: "Charge. If this creature moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 13 (4d6) damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone. <br> Auspicious Fortune (3/day). This creature can choose to replace the result of any d20 roll with a 15. <br>Magic Resitance. This creature has advantage on saving throws against spells and other magical effects.",
         mutate: "When this creature mutates it casts Conjure Woodland Beings (at 4th level) for each time it has mutates this combat.",
         actions:"Multiattack. This creature makes 3 attacks: one with its ram and two with its hooves. Ram. Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11(2d6 + 4) bludgeoning damage. <br> Hooves. Melee Weapon Attack: +7 to hit, reach 5 ft., one prone creature. Hit: 20(4d8 + 4) bludgeoning damage",
         legendaryActions: "",
@@ -333,7 +333,51 @@ const monsterManual = {
         imageDiscription: "A bizzare bird-like crature with dozens of wings.",
     },
 
-BlisterspitGremlin  : {
+    BlisterspitGremlin  : {
+        name: "Blisterspit Gremlin",
+        size: "small",
+        type:"Monstrosities",
+        subtype: "",
+        alignment: "Chaotic Evil",
+        armorClass: "13 (nautral armor)",
+        hitPoints: 26,
+        hitDie: "6d6+6",
+        speed: "30ft. Climb 20ft.",
+        str: 12,
+        dex: 14,
+        con: 13,
+        int: 9,
+        wis: 8,
+        cha: 6,
+        savingThrows: "",
+        skills: "Sleight of Hand +4, Stealth +4",
+        damageVulerabilites: "",
+        damageResistance: "",
+        damageImmunities: "",
+        senses: "passive Perception 9",
+        languges: "Crude Common and Goblin",
+        location: "Mountain",
+        locationTags: {
+            1: "Mountain"
+        },
+        triome: "Ketria, Raugrin, Savai",
+        triomeTages : {
+            1: "Raugrin",
+            2: "Ketria",
+            3: "Savai"
+        },
+        cr: 0.5,
+        traits: "Magic Resitance. This creature has advantage on saving throws against spells and other magical effects. <br>Reaction. If a spell was cast within 60 feet of the this creature it can use its Blister Spit as a reaction.",
+        mutate: "",
+        actions:"Claw. Melee Weapon Attack: +4 to hit, reach 5 ft., one target. This creature deals 11 (2d8+2) slashing damage. <br>Blister Spit. Ranged weapon attack: +5 to hit, range 30 ft., one target This creature deals 9 (2d6+2) fire damage.",
+        legendaryActions: "",
+        behaviour: "A spiteful and hateful creature. It spents most of it's time stealing then hording small, magical objects in cliff side nest. It will attack adventuring parties with magic items in an attemp to steal them. It usually ambushes prey by hiding in canyon walls or caves and then surprising foes at the bottom by poping out and using it's spit attack against them.",
+        lair: "",
+        imageUrl: "assets/blisterSpit.jpg",
+        imageDiscription: "an angry gremlin hang off a cliff, spliting a fireball",
+    },
+
+    BlitzLeech  : {
     //     name: "",
     //     Pname: "",
     //     size: "",
@@ -366,136 +410,118 @@ BlisterspitGremlin  : {
     //     imageDiscription: ,
 },
 
-BlitzLeech  : {
-    //     name: "",
-    //     Pname: "",
-    //     size: "",
-    //     alignment: "",
-    //     armorClass: "",
-    //     hitPoints: num,
-    //     hitDie: "",
-    //     speed: "",
-    //     str: num,
-    //     dex: num,
-    //     con: num,
-    //     int: num,
-    //     wis: num,
-    //     cha: num,
-    //     savingThrows "",
-    //     skills: "",
-    //     damageVulerabilites: "",
-    //     damageResistance
-    //     damageImmunities: "",
-    //     senses: "",
-    //     languges: "",
-    //     cr: num,
-    //     traits: "",
-    //     mutate: "",
-    //     actions:"",
-    //     legendaryActions: "",
-    //     behaviour: "",
-    //     lair: "",
-    //     imageUrl: "assets/.png",
-    //     imageDiscription: ,
-},
+    BoneyardLurker   : {
+        //     name: "",
+        //     Pname: "",
+        //     size: "",
+        //     alignment: "",
+        //     armorClass: "",
+        //     hitPoints: num,
+        //     hitDie: "",
+        //     speed: "",
+        //     str: num,
+        //     dex: num,
+        //     con: num,
+        //     int: num,
+        //     wis: num,
+        //     cha: num,
+        //     savingThrows "",
+        //     skills: "",
+        //     damageVulerabilites: "",
+        //     damageResistance
+        //     damageImmunities: "",
+        //     senses: "",
+        //     languges: "",
+        //     cr: num,
+        //     traits: "",
+        //     mutate: "",
+        //     actions:"",
+        //     legendaryActions: "",
+        //     behaviour: "",
+        //     lair: "",
+        //     imageUrl: "assets/.png",
+        //     imageDiscription: ,
+    },
 
-BoneyardLurker   : {
-    //     name: "",
-    //     Pname: "",
-    //     size: "",
-    //     alignment: "",
-    //     armorClass: "",
-    //     hitPoints: num,
-    //     hitDie: "",
-    //     speed: "",
-    //     str: num,
-    //     dex: num,
-    //     con: num,
-    //     int: num,
-    //     wis: num,
-    //     cha: num,
-    //     savingThrows "",
-    //     skills: "",
-    //     damageVulerabilites: "",
-    //     damageResistance
-    //     damageImmunities: "",
-    //     senses: "",
-    //     languges: "",
-    //     cr: num,
-    //     traits: "",
-    //     mutate: "",
-    //     actions:"",
-    //     legendaryActions: "",
-    //     behaviour: "",
-    //     lair: "",
-    //     imageUrl: "assets/.png",
-    //     imageDiscription: ,
-},
+    BoneyardMycodrax   : {
+        //     name: "",
+        //     Pname: "",
+        //     size: "",
+        //     alignment: "",
+        //     armorClass: "",
+        //     hitPoints: num,
+        //     hitDie: "",
+        //     speed: "",
+        //     str: num,
+        //     dex: num,
+        //     con: num,
+        //     int: num,
+        //     wis: num,
+        //     cha: num,
+        //     savingThrows "",
+        //     skills: "",
+        //     damageVulerabilites: "",
+        //     damageResistance
+        //     damageImmunities: "",
+        //     senses: "",
+        //     languges: "",
+        //     cr: num,
+        //     traits: "",
+        //     mutate: "",
+        //     actions:"",
+        //     legendaryActions: "",
+        //     behaviour: "",
+        //     lair: "",
+        //     imageUrl: "assets/.png",
+        //     imageDiscription: ,
+    },
 
-BoneyardMycodrax   : {
-    //     name: "",
-    //     Pname: "",
-    //     size: "",
-    //     alignment: "",
-    //     armorClass: "",
-    //     hitPoints: num,
-    //     hitDie: "",
-    //     speed: "",
-    //     str: num,
-    //     dex: num,
-    //     con: num,
-    //     int: num,
-    //     wis: num,
-    //     cha: num,
-    //     savingThrows "",
-    //     skills: "",
-    //     damageVulerabilites: "",
-    //     damageResistance
-    //     damageImmunities: "",
-    //     senses: "",
-    //     languges: "",
-    //     cr: num,
-    //     traits: "",
-    //     mutate: "",
-    //     actions:"",
-    //     legendaryActions: "",
-    //     behaviour: "",
-    //     lair: "",
-    //     imageUrl: "assets/.png",
-    //     imageDiscription: ,
-},
-
-BootNipper   : {
-    //     name: "",
-    //     Pname: "",
-    //     size: "",
-    //     alignment: "",
-    //     armorClass: "",
-    //     hitPoints: num,
-    //     hitDie: "",
-    //     speed: "",
-    //     str: num,
-    //     dex: num,
-    //     con: num,
-    //     int: num,
-    //     wis: num,
-    //     cha: num,
-    //     savingThrows "",
-    //     skills: "",
-    //     damageVulerabilites: "",
-    //     damageResistance
-    //     damageImmunities: "",
-    //     senses: "",
-    //     languges: "",
-    //     cr: num,
-    //     traits: "",
-    //     mutate: "",
-    //     actions:"",
-    //     legendaryActions: "",
-    //     behaviour: "",
-    //     lair: "",
-    //     imageUrl: "assets/.png",
-    //     imageDiscription: ,
+    BootNipper   : {
+        name: "Boot Nipper",
+        size: "Tiny",
+        type:"Monstrosities",
+        subtype: "",
+        alignment: "Chaotic Evil",
+        armorClass: "14",
+        hitPoints: 36,
+        hitDie: "(8d8+16)",
+        speed: "30 ft.",
+        str: 14,
+        dex: 16,
+        con: 15,
+        int: 5,
+        wis: 13,
+        cha: 6,
+        savingThrows: "",
+        skills: "Stealth +6",
+        damageVulerabilites: "",
+        damageResistance: "",
+        damageImmunities: "",
+        senses: "darkvision 60ft., passive Perception 11",
+        languges: "",
+        location: "Forest, Grassland, Swamp, Underdark, Boneyard",
+        locationTags: {
+            1: "Forest",
+            2: "Grassland",
+            3: "Swamp",
+            4: "Underdark",
+            5: "Boneyard"
+        },
+        triome: "Indatha, Savai, Zagoth",
+        triomeTages : {
+            1: "Indatha",
+            2: "Zagoth",
+            3: "Savai"
+        },
+        cr: 2,
+        traits: "Branching Mutations. This creature has one of the two following abilities: Life Drain or Necrotic Bite. <Br>Life Drain. When this creature makes a sucessful melee weapon attack it regains hit points equal to half the damage it dealth rounded up. <br>Necrotic Bite. This creatures melee wepons attack deal an extra 5 (2d8) necrotic damage.",
+        mutate: "",
+        actions:"Bite. Melee Weapon Attack: +4 to hit, reach 5ft. Hit: Deals 16 (3d6+6) piercing damage. If the target is large sized or larger the target must make a DC 13 Dex save. On a failure they fall prone, on sucess they lose half their movement next round.",
+        legendaryActions: "",
+        behaviour: "A Sleathy hunter, this tiny but aggressive creature stalks larger prey in enviroments where plant growth and underbush help concel itself. It has learned the way to attack larger prey is to bite at the feet, toes and ankles, causing it to fall over. It then either goes for the throat to kill or takes a few bites and runs away. It loves the taste of toes in particular and can bite through leather and sometimes even metal to get to them. It favours bipedal humaniods, as their two legs mean they are more easily prove to losing balance. Through small, it is pound for pound one of the deadlest and most aggressive monster on Ikoria.",
+        lair: "",
+        imageUrl: "assets/bootNipper.jpg",
+        imageDiscription: "A horrorifing little monster with a beak mouth and a touge coming out of the mouth with another mouth in it.",
 },
 
 Capricopian   : {
@@ -2783,6 +2809,7 @@ app.innit = () => {
     app.monsterCount();
     app.populate();
     app.depopulate();
+    app.crSelection();
     // app.monsterDisplayAll();
 };
 
@@ -2825,129 +2852,271 @@ app.monsterCount = () => {
 
 app.monsterDisplayAll = () => {
     for (item in monsterManual){
+
+        if(monsterManual[item].name != undefined){
+
         
 
-        const html2 = `<div class="monsterContainer">
-        <img src='../${monsterManual[item].imageUrl}' alt= "${monsterManual[item].imageDiscription}">
-        
-        <h2>${monsterManual[item].name}</h2>
-        <p>${monsterManual[item].size} ${monsterManual[item].type}` 
-        
-        if(monsterManual[item].subtype != "")
-        {
-            html20=  ` (${monsterManual[item].subtype})`
-        }
-        else{
-            html20 ="";
-        }
-
-        const html21=`
-        , ${monsterManual[item].alignment}</p>
-        <p> Armour Class: ${monsterManual[item].armorClass}</p>
-        <p> Hit Points: ${monsterManual[item].hitPoints} (${monsterManual[item].hitdie})</p>
-        <p> Speed: ${monsterManual[item].speed}</p>
-        <p>Str: ${monsterManual[item].str} Dex: ${monsterManual[item].dex} Con: ${monsterManual[item].con}
-        Int: ${monsterManual[item].int} Wis: ${monsterManual[item].wis} Cha: ${monsterManual[item].cha}</p>
-        `
-        if(monsterManual[item].savingThrows != "")
+            const html2 = `<div class="monsterContainer">
+            <img src='../${monsterManual[item].imageUrl}' alt= "${monsterManual[item].imageDiscription}">
+            
+            <h2>${monsterManual[item].name}</h2>
+            <p>${monsterManual[item].size} ${monsterManual[item].type}` 
+            
+            if(monsterManual[item].subtype != "")
             {
-                html3=  `<p> Saving Throws: ${monsterManual[item].savingThrows}</p>`
+                html20=  ` (${monsterManual[item].subtype})`
             }
             else{
-                html3 ="";
-            }
-        
-        if(monsterManual[item].skills != "")
-            {
-                html4=  `<p>Skills: ${monsterManual[item].skills}</p>`
-            } 
-            else{
-                html4 ="";
+                html20 ="";
             }
 
-        if(monsterManual[item].damageVulerabilites != "")
-            {
-                html5=  `<p>Damage Vulerabilites: ${monsterManual[item].damageVulerabilites}</p>`
-            }
-            else{
-                html5 ="";
-            }
-    
-        if(monsterManual[item].damageResistance != "")
-            {
-                html6=  `<p>Damage Resistances: ${monsterManual[item].damageResistance}</p>`
-            }
-            else{
-                html6 ="";
-            }
-    
-        if(monsterManual[item].damageImmunities != "")
-            {
-                html7=  `<p>Damage Immunities: ${monsterManual[item].damageImmunities}</p>`
-            }
-            else{
-                html7 ="";
-            }
-
-        if(monsterManual[item].conditionImmunities != "")
-            {
-                html22=  `<p>Condition Immunities: ${monsterManual[item].conditionImmunities}</p>`
-            }
-            else{
-                html22 ="";
-            }
-        
-        const html8=`
-        <p> Senses: ${monsterManual[item].senses}</p>
-        <p> Languges: ${monsterManual[item].languges}</p>
-        <p> Locations: ${monsterManual[item].location} &nbsp;&nbsp;&nbsp;&nbsp; Triome: ${monsterManual[item].triome} </p>
-        <p> Challenge ${monsterManual[item].cr} ${monsterManual[item].xp}<p><br>
-        <p> ${monsterManual[item].traits}</p><br>
-        `
-    
-        if(monsterManual[item].mutate != "")
-        {
-            html9=  `<p> Upon Mutation: ${monsterManual[item].mutate}</p>`
-        }
-        else{
-            html9 ="";
-        }
-
-        const html10=`
-        <h3>Actions</h3>
-        <p> ${monsterManual[item].actions}</p><br>
-        `
-        
-        if(monsterManual[item].legendaryActions != "")
-        {
-            html11=  `
-            <h3>Legendary Actions</h3>
-            <p>${monsterManual[item].legendaryActions}</p>
+            const html21=`
+            , ${monsterManual[item].alignment}</p>
+            <p> Armour Class: ${monsterManual[item].armorClass}</p>
+            <p> Hit Points: ${monsterManual[item].hitPoints} (${monsterManual[item].hitdie})</p>
+            <p> Speed: ${monsterManual[item].speed}</p>
+            <p>Str: ${monsterManual[item].str} Dex: ${monsterManual[item].dex} Con: ${monsterManual[item].con}
+            Int: ${monsterManual[item].int} Wis: ${monsterManual[item].wis} Cha: ${monsterManual[item].cha}</p>
             `
-        }
-        else{
-            html11 ="";
-        }
+            if(monsterManual[item].savingThrows != "")
+                {
+                    html3=  `<p> Saving Throws: ${monsterManual[item].savingThrows}</p>`
+                }
+                else{
+                    html3 ="";
+                }
+            
+            if(monsterManual[item].skills != "")
+                {
+                    html4=  `<p>Skills: ${monsterManual[item].skills}</p>`
+                } 
+                else{
+                    html4 ="";
+                }
 
-        const html12=`
-        <p>${monsterManual[item].behaviour}</p>
-        `
+            if(monsterManual[item].damageVulerabilites != "")
+                {
+                    html5=  `<p>Damage Vulerabilites: ${monsterManual[item].damageVulerabilites}</p>`
+                }
+                else{
+                    html5 ="";
+                }
         
-        if(monsterManual[item].lair != "")
-        {
-            html13=  `
-            <h3>Lair Actions</h3>
-            <p>${monsterManual[item].lair}</p>
+            if(monsterManual[item].damageResistance != "")
+                {
+                    html6=  `<p>Damage Resistances: ${monsterManual[item].damageResistance}</p>`
+                }
+                else{
+                    html6 ="";
+                }
+        
+            if(monsterManual[item].damageImmunities != "")
+                {
+                    html7=  `<p>Damage Immunities: ${monsterManual[item].damageImmunities}</p>`
+                }
+                else{
+                    html7 ="";
+                }
+
+            if(monsterManual[item].conditionImmunities != "")
+                {
+                    html22=  `<p>Condition Immunities: ${monsterManual[item].conditionImmunities}</p>`
+                }
+                else{
+                    html22 ="";
+                }
+            
+            const html8=`
+            <p> Senses: ${monsterManual[item].senses}</p>
+            <p> Languges: ${monsterManual[item].languges}</p>
+            <p> Locations: ${monsterManual[item].location} &nbsp;&nbsp;&nbsp;&nbsp; Triome: ${monsterManual[item].triome} </p>
+            <p> Challenge ${monsterManual[item].cr} ${monsterManual[item].xp}<p><br>
+            <p> ${monsterManual[item].traits}</p><br>
             `
+        
+            if(monsterManual[item].mutate != "")
+            {
+                html9=  `<p> Upon Mutation: ${monsterManual[item].mutate}</p>`
+            }
+            else{
+                html9 ="";
+            }
+
+            const html10=`
+            <h3>Actions</h3>
+            <p> ${monsterManual[item].actions}</p><br>
+            `
+            
+            if(monsterManual[item].legendaryActions != "")
+            {
+                html11=  `
+                <h3>Legendary Actions</h3>
+                <p>${monsterManual[item].legendaryActions}</p>
+                `
+            }
+            else{
+                html11 ="";
+            }
+
+            const html12=`
+            <p>${monsterManual[item].behaviour}</p>
+            `
+            
+            if(monsterManual[item].lair != "")
+            {
+                html13=  `
+                <h3>Lair Actions</h3>
+                <p>${monsterManual[item].lair}</p>
+                `
+            }
+            else{
+                html13 ="";
+            }
+
+
+            $(".monsters").append(html2 + html20 + html21 + html3 + html4 + html5 + html6 + html7 + html22 + html8 + html9 + html10 + html11 + html12 + html13);
+
         }
-        else{
-            html13 ="";
-        }
-
-
-        $(".monsters").append(html2 + html20 + html21 + html3 + html4 + html5 + html6 + html7 + html22 + html8 + html9 + html10 + html11 + html12 + html13);
-
     }
+}
+
+app.crSelection = () => {
+    $("#selectCR").on('click', function(){
+        var min = $('#minCR').val();
+        var max = $('#maxCR').val();
+        console.log("crSelection Click test!");
+        console.log("Min Cr is : ", min);
+        console.log("Max Cr is : ", max);
+        for (item in monsterManual){
+
+            if(monsterManual[item].cr >= min && monsterManual[item].cr <= max){
+    
+            
+    
+                const html2 = `<div class="monsterContainer">
+                <img src='../${monsterManual[item].imageUrl}' alt= "${monsterManual[item].imageDiscription}">
+                
+                <h2>${monsterManual[item].name}</h2>
+                <p>${monsterManual[item].size} ${monsterManual[item].type}` 
+                
+                if(monsterManual[item].subtype != "")
+                {
+                    html20=  ` (${monsterManual[item].subtype})`
+                }
+                else{
+                    html20 ="";
+                }
+    
+                const html21=`
+                , ${monsterManual[item].alignment}</p>
+                <p> Armour Class: ${monsterManual[item].armorClass}</p>
+                <p> Hit Points: ${monsterManual[item].hitPoints} (${monsterManual[item].hitdie})</p>
+                <p> Speed: ${monsterManual[item].speed}</p>
+                <p>Str: ${monsterManual[item].str} Dex: ${monsterManual[item].dex} Con: ${monsterManual[item].con}
+                Int: ${monsterManual[item].int} Wis: ${monsterManual[item].wis} Cha: ${monsterManual[item].cha}</p>
+                `
+                if(monsterManual[item].savingThrows != "")
+                    {
+                        html3=  `<p> Saving Throws: ${monsterManual[item].savingThrows}</p>`
+                    }
+                    else{
+                        html3 ="";
+                    }
+                
+                if(monsterManual[item].skills != "")
+                    {
+                        html4=  `<p>Skills: ${monsterManual[item].skills}</p>`
+                    } 
+                    else{
+                        html4 ="";
+                    }
+    
+                if(monsterManual[item].damageVulerabilites != "")
+                    {
+                        html5=  `<p>Damage Vulerabilites: ${monsterManual[item].damageVulerabilites}</p>`
+                    }
+                    else{
+                        html5 ="";
+                    }
+            
+                if(monsterManual[item].damageResistance != "")
+                    {
+                        html6=  `<p>Damage Resistances: ${monsterManual[item].damageResistance}</p>`
+                    }
+                    else{
+                        html6 ="";
+                    }
+            
+                if(monsterManual[item].damageImmunities != "")
+                    {
+                        html7=  `<p>Damage Immunities: ${monsterManual[item].damageImmunities}</p>`
+                    }
+                    else{
+                        html7 ="";
+                    }
+    
+                if(monsterManual[item].conditionImmunities != "")
+                    {
+                        html22=  `<p>Condition Immunities: ${monsterManual[item].conditionImmunities}</p>`
+                    }
+                    else{
+                        html22 ="";
+                    }
+                
+                const html8=`
+                <p> Senses: ${monsterManual[item].senses}</p>
+                <p> Languges: ${monsterManual[item].languges}</p>
+                <p> Locations: ${monsterManual[item].location} &nbsp;&nbsp;&nbsp;&nbsp; Triome: ${monsterManual[item].triome} </p>
+                <p> Challenge ${monsterManual[item].cr} ${monsterManual[item].xp}<p><br>
+                <p> ${monsterManual[item].traits}</p><br>
+                `
+            
+                if(monsterManual[item].mutate != "")
+                {
+                    html9=  `<p> Upon Mutation: ${monsterManual[item].mutate}</p>`
+                }
+                else{
+                    html9 ="";
+                }
+    
+                const html10=`
+                <h3>Actions</h3>
+                <p> ${monsterManual[item].actions}</p><br>
+                `
+                
+                if(monsterManual[item].legendaryActions != "")
+                {
+                    html11=  `
+                    <h3>Legendary Actions</h3>
+                    <p>${monsterManual[item].legendaryActions}</p>
+                    `
+                }
+                else{
+                    html11 ="";
+                }
+    
+                const html12=`
+                <p>${monsterManual[item].behaviour}</p>
+                `
+                
+                if(monsterManual[item].lair != "")
+                {
+                    html13=  `
+                    <h3>Lair Actions</h3>
+                    <p>${monsterManual[item].lair}</p>
+                    `
+                }
+                else{
+                    html13 ="";
+                }
+    
+    
+                $(".monsters").append(html2 + html20 + html21 + html3 + html4 + html5 + html6 + html7 + html22 + html8 + html9 + html10 + html11 + html12 + html13);
+    
+            }
+        }
+    })
 }
 
 $(function(){
